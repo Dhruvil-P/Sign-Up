@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="Index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <img src="./images/bg-intro-desktop.png" alt="">
+
+  <p class="Title">Learn to code by</br>
+  watching others</p>
+
+  <p class="Desc">
+    See how experienced developers solve problems in real-time.</br>
+     Watching scripted tutorials is great, but understanding how</br>
+    developers think is invaluable. 
+  </p>
+
+  <div id="Heading"><p class="Heading">Try it free 7 days <span>then $20/mo. thereafter</span></p></div>
+
+  <div class="Container">
+    <div class="Inputs">
+      <input type="text" placeholder="First Name *" name="First Name " id="Fname">
+      <input type="text" placeholder="Last Name *" name="Last Name " id="Lname">
+      <input type="email" placeholder="Email Address *" name="Email Address" id="Email">
+      <input type="password" placeholder="Password *" name="Password" id="Pass">
+      <input type="radio" id="Show" onclick="Show()">
+
+      <img src="./images/icon-error.svg" alt="Error_image" id="Img1">
+      <span id="Error1">First name cannot be empty!</span>
+      <span id="Error1_1">There is no name with a number!</span>
+      <img src="./images/icon-error.svg" alt="Error_image" id="Img2">
+      <span id="Error2">Last name cannot be empty!</span>
+      <span id="Error2_1">There is no name with a number!</span>
+      <img src="./images/icon-error.svg" alt="Error_image" id="Img3">
+      <span id="Error3">An email cannot be empty!</span>
+      <span id="Error4">An email cannot be of this type!</span>
+      <img src="./images/icon-error.svg" alt=Error_image" id="Img4">
+      <span id="Error5">The password's length should be 8 minimum!</span>
+    </div>
+
+    <button id="Submit" onclick="validation()">CLAIM YOUR FREE TRAIL</button>
+      <p class="Footer">By clicking the button, you are agreeing to our<span class="TC"> Terms and Services</span>
+      </p>
+      <p class="Star">The input placeholder with <span class="Asterick">*</span> symbol is mandatory to fill</p>
+  </div>
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Dhruvil</a>.
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" 
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" 
+    crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
